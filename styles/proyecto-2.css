@@ -51,3 +51,12 @@ li {
 .description {
   padding: 0 1rem;
 }
+
+
+
+
+
+.textarea {
+  min-height: 15rem;
+  resize: vertical;
+}
