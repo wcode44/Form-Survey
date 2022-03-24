@@ -10,12 +10,12 @@
   <title>Survey Form</title>
 </head>
 <body>
-  <h1 id="title" class="title">freeCodeCamp Survey Form</h1>
+  <h1 id="title" class="title">FreeCodeCamp Survey Form</h1>
   <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
 
-  <form action="#" id="survey-form" class="formSurvey">
+  <form action="#" id="survey-form" class="form">
     <div>
-      <label for="name" id="name-label">Name</label>
+      <label for="name" id="name-label" class="subtitle">Name</label>
       <input
       id="name"
       class="input"
@@ -27,7 +27,7 @@
     </div>
 
     <div>
-      <label for="email" id="email-label">Email</label>
+      <label for="email" id="email-label" class="subtitle">Email</label>
       <input
       id="email"
       class="input"
@@ -39,7 +39,7 @@
     </div>
     
     <div>
-      <label for="number" id="number-label">Age (optional)</label>
+      <label for="number" id="number-label" class="subtitle">Age (optional)</label>
       <input
       id="number"
       class="input"
@@ -52,8 +52,8 @@
     </div>
 
     <div>
-      <p>Which option best describes your current role?</p>
-      <select name="role" id="dropdown">
+      <p class="subtitle">Which option best describes your current role?</p>
+      <select name="role" id="dropdown" class="select">
         <option value disabled selected>Select current role</option>
         <option value="student">Student</option>
         <option value="job">Full Time Job</option>
@@ -64,7 +64,7 @@
     </div>
 
     <div>
-      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <p class="subtitle">Would you recommend freeCodeCamp to a friend?</p>
       <ul>
         <li>
           <input
@@ -74,7 +74,7 @@
           value="definitely"
           checked
           />
-          <label for="option-1">Definitely</label>
+          <label for="radio-1" class="label-option">Definitely</label>
         </li>
         <li>
           <input
@@ -83,7 +83,7 @@
           name="user-recommend"
           value="maybe" 
           />
-          <label for="option-2">Maybe</label>
+          <label for="radio-2" class="label-option">Maybe</label>
         </li>
         <li>
           <input
@@ -92,14 +92,14 @@
           name="user-recommend" 
           value="not-sure"
           />
-          <label for="option-3">Not sure</label>
+          <label for="radio-3" class="label-option">Not sure</label>
         </li>
       </ul>
     </div>
 
     <div>
-      <p>What is your favorite feature of freeCodeCamp?</p>
-      <select name="mostLike" id="most-like">
+      <p class="subtitle">What is your favorite feature of freeCodeCamp?</p>
+      <select name="mostLike" id="most-like" class="select">
         <option value disabled selected>Select and option</option>
         <option value="challenge">Challenge</option>
         <option value="project">Project</option>
@@ -109,106 +109,117 @@
     </div>
 
     <div>
-      <p>What would you like to see improved? (Check all that apply)</p>
+      <p class="subtitle">What would you like to see improved? (Check all that apply)</p>
       <ul>
         <li>
           <input
+          id="checkbox-1"
           name="prefer"
           value="front-end-projects"
           type="checkbox"
           />
-          <label for="">Front-end Projects</label>
+          <label for="checkbox-1" class="label-option">Front-end Projects</label>
         </li>
         <li>
           <input
+          id="checkbox-2"
           name="prefer"
           value="back-end-projects"
           type="checkbox"
           />
-          <label for="">Back-end Projects</label>
+          <label for="checkbox-2" class="label-option">Back-end Projects</label>
         </li>
         <li>
           <input
+          id="checkbox-3"
           name="prefer"
           value="data-visualization"
           type="checkbox"
           />
-          <label for="">Data Visualization</label>
+          <label for="checkbox-3" class="label-option">Data Visualization</label>
         </li>
         <li>
           <input
+          id="checkbox-4"
           name="prefer"
           value="challenges"
           type="checkbox"
           />
-          <label for="">Challenges</label>
+          <label for="checkbox-4" class="label-option">Challenges</label>
         </li>
         <li>
           <input
+          id="checkbox-5"
           name="prefer"
           value="open-source-community"
           type="checkbox"
           />
-          <label for="">Open Source Community</label>
+          <label for="checkbox-5" class="label-option">Open Source Community</label>
         </li>
         <li>
           <input
+          id="checkbox-6"
           name="prefer"
           value="gitter-help-rooms"
           type="checkbox"
           />
-          <label for="">Gitter help rooms</label>
+          <label for="checkbox-6" class="label-option">Gitter help rooms</label>
         </li>
         <li>
           <input
+          id="checkbox-7"
           name="prefer"
           value="videos"
           type="checkbox"
           />
-          <label for="">Videos</label>
+          <label for="checkbox-7" class="label-option">Videos</label>
         </li>
         <li>
           <input
+          id="checkbox-8"
           name="prefer"
           value="city-meetups"
           type="checkbox"
           />
-          <label for="">City Meetups</label>
+          <label for="checkbox-8" class="label-option">City Meetups</label>
         </li>
         <li>
           <input
+          id="checkbox-9"
           name="prefer"
           value="wiki"
           type="checkbox"
           />
-          <label for="">Wiki</label>
+          <label for="checkbox-9" class="label-option">Wiki</label>
         </li>
         <li>
           <input
+          id="checkbox-10"
           name="prefer"
           value="forum"
           type="checkbox"
           />
-          <label for="">Forum</label>
+          <label for="checkbox-10" class="label-option">Forum</label>
         </li>
         <li>
           <input
+          id="checkbox-11"
           name="prefer"
           value="additional-courses"
           type="checkbox"
           />
-          <label for="">Additional Courses</label>
+          <label for="checkbox-11" class="label-option">Additional Courses</label>
         </li>
       </ul>
     </div>
 
     <div>
-      <p>Any comments or suggestions?</p>
+      <p class="subtitle">Any comments or suggestions?</p>
       <textarea class="textarea" name="comments" placeholder="Enter your comment here..."></textarea>
     </div>
 
     <div>
-      <button id="submit" type="submit">Submit</button>
+      <button id="submit" class="submit" type="submit">Submit</button>
     </div>
   </form>
 </body>
